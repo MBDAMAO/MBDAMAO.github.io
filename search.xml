@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>机器学习</title>
+    <url>/2022/11/12/page2/</url>
+    <content><![CDATA[<p>#这是一篇测试文章<br>##测试一</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Windows系统下安装Debian 12虚拟机</title>
+    <url>/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
+    <content><![CDATA[<h2 id="0-工具-amp-环境"><a href="#0-工具-amp-环境" class="headerlink" title="0. 工具&amp;环境"></a>0. 工具&amp;环境</h2><ul>
+<li>Windows操作系统</li>
+<li>VMware虚拟机环境</li>
+</ul>
+<h2 id="1-在官网下载Debian-12-ISO镜像-（科学上网加速）"><a href="#1-在官网下载Debian-12-ISO镜像-（科学上网加速）" class="headerlink" title="1. 在官网下载Debian 12 ISO镜像    （科学上网加速）"></a>1. 在官网下载Debian 12 ISO镜像    （科学上网加速）</h2><pre><code>https://www.debian.org/download 
+</code></pre>
+<h2 id="2-在VMware里创建虚拟机"><a href="#2-在VMware里创建虚拟机" class="headerlink" title="2. 在VMware里创建虚拟机"></a>2. 在VMware里创建虚拟机</h2><p><img src="./1.png"></p>
+<p><img src="./2.png"></p>
+<p><img src="./3.png"></p>
+<p><img src="./4.png"></p>
+<p><img src="./5.png"></p>
+<p><img src="./6.png"></p>
+<p><img src="./7.png"></p>
+<p><img src="./8.png"></p>
+<p><img src="./9.png"></p>
+<p><img src="./10.png"></p>
+<p><img src="./11.png"></p>
+<p><img src="./12.png"></p>
+<p><img src="./13.png"></p>
+<p><img src="./14.png"></p>
+<p><img src="./15.png"></p>
+<p><img src="./16.png"></p>
+<h2 id="3-启动虚拟机配置系统"><a href="#3-启动虚拟机配置系统" class="headerlink" title="3. 启动虚拟机配置系统"></a>3. 启动虚拟机配置系统</h2><p>启动虚拟机</p>
+<p><img src="./17.png"></p>
+<p>这里选择Advanced options</p>
+<p><img src="./18.png"></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>虚拟机</tag>
+        <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AC自动机</title>
     <url>/2023/07/17/AC%E8%87%AA%E5%8A%A8%E6%9C%BA/</url>
     <content><![CDATA[<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">insert</span>(<span class="params">str_input</span>):  </span><br><span class="line">    <span class="keyword">global</span> cnt  </span><br><span class="line">    root = <span class="number">0</span>  </span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> str_input:  </span><br><span class="line">        index = <span class="built_in">ord</span>(ch) - <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>)  </span><br><span class="line">        <span class="keyword">if</span> tree[root][index] == <span class="number">0</span>:  </span><br><span class="line">            cnt = cnt + <span class="number">1</span>  </span><br><span class="line">            tree[root][index] = cnt  </span><br><span class="line">        <span class="comment"># sum_[tree[root][index]] += 1 前缀计数  </span></span><br><span class="line">        root = tree[root][index]  </span><br><span class="line">    end[root] += <span class="number">1</span>  <span class="comment"># 标记结束</span></span><br></pre></td></tr></table></figure>
@@ -47,50 +92,5 @@
       <tags>
         <tag>Hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Windows系统下安装Debian 12虚拟机</title>
-    <url>/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
-    <content><![CDATA[<h2 id="0-工具-amp-环境"><a href="#0-工具-amp-环境" class="headerlink" title="0. 工具&amp;环境"></a>0. 工具&amp;环境</h2><ul>
-<li>Windows操作系统</li>
-<li>VMware虚拟机环境</li>
-</ul>
-<h2 id="1-在官网下载Debian-12-ISO镜像-（科学上网加速）"><a href="#1-在官网下载Debian-12-ISO镜像-（科学上网加速）" class="headerlink" title="1. 在官网下载Debian 12 ISO镜像    （科学上网加速）"></a>1. 在官网下载Debian 12 ISO镜像    （科学上网加速）</h2><pre><code>https://www.debian.org/download 
-</code></pre>
-<h2 id="2-在VMware里创建虚拟机"><a href="#2-在VMware里创建虚拟机" class="headerlink" title="2. 在VMware里创建虚拟机"></a>2. 在VMware里创建虚拟机</h2><p><img src="./1.png"></p>
-<p><img src="./2.png"></p>
-<p><img src="./3.png"></p>
-<p><img src="./4.png"></p>
-<p><img src="./5.png"></p>
-<p><img src="./6.png"></p>
-<p><img src="./7.png"></p>
-<p><img src="./8.png"></p>
-<p><img src="./9.png"></p>
-<p><img src="./10.png"></p>
-<p><img src="./11.png"></p>
-<p><img src="./12.png"></p>
-<p><img src="./13.png"></p>
-<p><img src="./14.png"></p>
-<p><img src="./15.png"></p>
-<p><img src="./16.png"></p>
-<h2 id="3-启动虚拟机配置系统"><a href="#3-启动虚拟机配置系统" class="headerlink" title="3. 启动虚拟机配置系统"></a>3. 启动虚拟机配置系统</h2><p>启动虚拟机</p>
-<p><img src="./17.png"></p>
-<p>这里选择Advanced options</p>
-<p><img src="./18.png"></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>虚拟机</tag>
-        <tag>操作系统</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>机器学习</title>
-    <url>/2022/11/12/page2/</url>
-    <content><![CDATA[<p>#这是一篇测试文章<br>##测试一</p>
-]]></content>
   </entry>
 </search>
