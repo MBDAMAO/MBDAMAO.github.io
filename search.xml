@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
+    <content><![CDATA[<h1 id="工具-amp-环境"><a href="#工具-amp-环境" class="headerlink" title="工具&amp;环境"></a>工具&amp;环境</h1><ul>
+<li><p>Windows操作系统</p>
+</li>
+<li><p>VMware虚拟机环境<br>##1. 在官网下载Debian 12 ISO镜像    （科学上网加速）</p>
+<p>  <a href="https://www.debian.org/download">https://www.debian.org/download</a> </p>
+</li>
+</ul>
+<p>##2. 在VMware里创建虚拟机</p>
+]]></content>
+  </entry>
+  <entry>
     <title>MBDAMAO</title>
     <url>/2022/11/11/hello-world/</url>
     <content><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
@@ -18,11 +31,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title>page2</title>
+    <title>机器学习</title>
     <url>/2022/11/12/page2/</url>
     <content><![CDATA[<p>#这是一篇测试文章<br>##测试一</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1145141919810</span><br></pre></td></tr></table></figure>
-<p>more info: <a href="www.baidu.com">check here</a></p>
 ]]></content>
   </entry>
 </search>
