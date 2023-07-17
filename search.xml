@@ -10,14 +10,7 @@
 <h2 id="1-在官网下载Debian-12-ISO镜像-（科学上网加速）"><a href="#1-在官网下载Debian-12-ISO镜像-（科学上网加速）" class="headerlink" title="1. 在官网下载Debian 12 ISO镜像    （科学上网加速）"></a>1. 在官网下载Debian 12 ISO镜像    （科学上网加速）</h2><p>  <a href="https://www.debian.org/download">https://www.debian.org/download</a> </p>
 </li>
 </ul>
-<h2 id="2-在VMware里创建虚拟机"><a href="#2-在VMware里创建虚拟机" class="headerlink" title="2. 在VMware里创建虚拟机"></a>2. 在VMware里创建虚拟机</h2><p><img src="./1.png" alt="这是图片捏" title="理塘丁真"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>机器学习</title>
-    <url>/2022/11/12/page2/</url>
-    <content><![CDATA[<p>#这是一篇测试文章<br>##测试一</p>
-]]></content>
+<h2 id="2-在VMware里创建虚拟机"><a href="#2-在VMware里创建虚拟机" class="headerlink" title="2. 在VMware里创建虚拟机"></a>2. 在VMware里创建虚拟机</h2>]]></content>
   </entry>
   <entry>
     <title>MBDAMAO</title>
@@ -34,6 +27,12 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>机器学习</title>
+    <url>/2022/11/12/page2/</url>
+    <content><![CDATA[<p>#这是一篇测试文章<br>##测试一</p>
 ]]></content>
   </entry>
 </search>
