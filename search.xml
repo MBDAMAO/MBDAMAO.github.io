@@ -63,12 +63,6 @@
       </tags>
   </entry>
   <entry>
-    <title>机器学习</title>
-    <url>/2022/11/12/page2/</url>
-    <content><![CDATA[<p>#这是一篇测试文章<br>##测试一</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hexo 框架基本命令</title>
     <url>/2022/11/11/hello-world/</url>
     <content><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
@@ -92,5 +86,11 @@
       <tags>
         <tag>Hexo</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>机器学习</title>
+    <url>/2022/11/12/page2/</url>
+    <content><![CDATA[<p>#这是一篇测试文章<br>##测试一</p>
+]]></content>
   </entry>
 </search>
