@@ -3,7 +3,7 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  
+  <link rel="icon" href="/images/favicon-modified.png">
   
   <title>Windows系统下安装Debian 12虚拟机 | DAMAO</title>
   <meta name="author" content="MBDAMAO" />
@@ -23,24 +23,7 @@
 <meta property="og:site_name" content="DAMAO">
 <meta property="og:description" content="0. 工具&amp;环境 Windows操作系统 VMware虚拟机环境  1. 在官网下载Debian 12 ISO镜像    （科学上网加速）https:&#x2F;&#x2F;www.debian.org&#x2F;download   2. 在VMware里创建虚拟机                3. 启动虚拟机配置系统启动虚拟机  这里选择Advanced options">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/1.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/2.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/3.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/4.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/5.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/6.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/7.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/8.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/9.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/10.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/11.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/12.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/13.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/14.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/15.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/16.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/17.png">
-<meta property="og:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/18.png">
+<meta property="og:image" content="http://example.com/images/favicon-modified.png">
 <meta property="article:published_time" content="2023-07-16T13:48:53.315Z">
 <meta property="article:modified_time" content="2023-07-17T05:58:46.430Z">
 <meta property="article:author" content="MBDAMAO">
@@ -48,7 +31,7 @@
 <meta property="article:tag" content="虚拟机">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/1.png">
+<meta name="twitter:image" content="http://example.com/images/favicon-modified.png">
   
   <!-- 站点验证相关 -->
   
@@ -110,6 +93,33 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
+                                    
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a><i class="fa fa-link"></i>链接</a>
+                                                <ul class="sub-menu">
+                                                    
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://github.com/MBDAMAO">作者博客</a></li>
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://github.com/MBDAMAO/MBDAMAO.github.io">项目链接</a></li>
+                                                        
+                                                    
+                                                </ul>
+                                            </li>
+                                        
                                     
                                 
                             </ul>
@@ -222,6 +232,8 @@
         <footer class="kratos-entry-footer clearfix">
             
                 <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                    <a class="donate" href="javascript:;"><i class="fa fa-bitcoin"></i> 打赏</a>
                 
                 
                     <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
@@ -448,12 +460,12 @@ VMware虚拟机环境
                 <div class="col-md-6 col-md-offset-3 footer-list text-center">
                     <ul class="kratos-social-icons">
                         
+                        <li><a href="mailto:3034906016@qq.com"><i class="fa fa-envelope"></i></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://t.me/Damao"><i class="fa fa-telegram"></i></a></li>
                         
-                        <li><a target="_blank" rel="nofollow" href="https://t.me/CandyUnion"><i class="fa fa-telegram"></i></a></li>
                         
                         
                         
-                        <li><a target="_blank" rel="me" href="https://nya.one/@MBDAMAO"><i class="fa fa fa-share-alt-square"></i></a></li>
                         <li><a target="_blank" rel="nofollow" href="https://github.com/MBDAMAO"><i class="fa fa-github"></i></a></li>
                         
                     </ul>
@@ -529,7 +541,7 @@ VMware虚拟机环境
     <meting-js
         server="netease"
         type="playlist"
-        id="8511246588"
+        id="1469945925"
         order="random"
         fixed="true"
     >
@@ -542,6 +554,8 @@ VMware虚拟机环境
 <script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
+
+    <script defer src="/vendors/layui-src@2.5.5/dist/layui.all.js"></script>
 
 
 

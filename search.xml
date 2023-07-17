@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo 框架基本命令</title>
-    <url>/2022/11/11/hello-world/</url>
-    <content><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>AC自动机</title>
+    <url>/2023/07/17/AC%E8%87%AA%E5%8A%A8%E6%9C%BA/</url>
+    <content><![CDATA[<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">insert</span>(<span class="params">str_input</span>):  </span><br><span class="line">    <span class="keyword">global</span> cnt  </span><br><span class="line">    root = <span class="number">0</span>  </span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> str_input:  </span><br><span class="line">        index = <span class="built_in">ord</span>(ch) - <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>)  </span><br><span class="line">        <span class="keyword">if</span> tree[root][index] == <span class="number">0</span>:  </span><br><span class="line">            cnt = cnt + <span class="number">1</span>  </span><br><span class="line">            tree[root][index] = cnt  </span><br><span class="line">        <span class="comment"># sum_[tree[root][index]] += 1 前缀计数  </span></span><br><span class="line">        root = tree[root][index]  </span><br><span class="line">    end[root] += <span class="number">1</span>  <span class="comment"># 标记结束</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_fail</span>():  </span><br><span class="line">    fail[<span class="number">0</span>] = <span class="number">0</span>  </span><br><span class="line">    que = queue.Queue()  </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">27</span>):  </span><br><span class="line">        <span class="keyword">if</span> tree[<span class="number">0</span>][i]:  </span><br><span class="line">            que.put(tree[<span class="number">0</span>][i])  </span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">not</span> que.empty():  </span><br><span class="line">        v = que.get()  </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">27</span>):  </span><br><span class="line">            <span class="keyword">if</span> tree[v][i]:  </span><br><span class="line">                fail[tree[v][i]] = tree[fail[v]][i]  </span><br><span class="line">                que.put(tree[v][i])  </span><br><span class="line">            <span class="keyword">else</span>:  </span><br><span class="line">                tree[v][i] = tree[fail[v]][i]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">query</span>(<span class="params">str_input</span>):  </span><br><span class="line">    root = <span class="number">0</span>  </span><br><span class="line">    ans = <span class="number">0</span>  </span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> <span class="built_in">list</span>(str_input):  </span><br><span class="line">        index = <span class="built_in">ord</span>(ch) - <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>)  </span><br><span class="line">        u = root = tree[root][index]  </span><br><span class="line">        <span class="keyword">while</span> u <span class="keyword">and</span> end[u] != -<span class="number">1</span>:  </span><br><span class="line">            ans += end[u]  </span><br><span class="line">            end[u] = -<span class="number">1</span>  </span><br><span class="line">            u = fail[u]  </span><br><span class="line">    <span class="keyword">return</span> ans</span><br></pre></td></tr></table></figure>
 
 
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">insert(<span class="string">&#x27;ash&#x27;</span>)  </span><br><span class="line">insert(<span class="string">&#x27;shx&#x27;</span>)  </span><br><span class="line">insert(<span class="string">&#x27;bcd&#x27;</span>)  </span><br><span class="line">insert(<span class="string">&#x27;sha&#x27;</span>)  </span><br><span class="line">insert(<span class="string">&#x27;h&#x27;</span>)  </span><br><span class="line">get_fail()  </span><br><span class="line"><span class="built_in">print</span>(query(<span class="string">&#x27;ashe&#x27;</span>))</span><br></pre></td></tr></table></figure>
 
-<h3 id="Clean-cache-files"><a href="#Clean-cache-files" class="headerlink" title="Clean cache files"></a>Clean cache files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<h3 id="Create-new-pages"><a href="#Create-new-pages" class="headerlink" title="Create new pages"></a>Create new pages</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/zh-cn/docs/">Hexo_docs</a></p>
+<pre><code>&gt;&gt; 2
+</code></pre>
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>算法</category>
+        <category>匹配</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -65,26 +63,28 @@
       </tags>
   </entry>
   <entry>
-    <title>AC自动机</title>
-    <url>/2023/07/17/AC%E8%87%AA%E5%8A%A8%E6%9C%BA/</url>
-    <content><![CDATA[<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">insert</span>(<span class="params">str_input</span>):  </span><br><span class="line">    <span class="keyword">global</span> cnt  </span><br><span class="line">    root = <span class="number">0</span>  </span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> str_input:  </span><br><span class="line">        index = <span class="built_in">ord</span>(ch) - <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>)  </span><br><span class="line">        <span class="keyword">if</span> tree[root][index] == <span class="number">0</span>:  </span><br><span class="line">            cnt = cnt + <span class="number">1</span>  </span><br><span class="line">            tree[root][index] = cnt  </span><br><span class="line">        <span class="comment"># sum_[tree[root][index]] += 1 前缀计数  </span></span><br><span class="line">        root = tree[root][index]  </span><br><span class="line">    end[root] += <span class="number">1</span>  <span class="comment"># 标记结束</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_fail</span>():  </span><br><span class="line">    fail[<span class="number">0</span>] = <span class="number">0</span>  </span><br><span class="line">    que = queue.Queue()  </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">27</span>):  </span><br><span class="line">        <span class="keyword">if</span> tree[<span class="number">0</span>][i]:  </span><br><span class="line">            que.put(tree[<span class="number">0</span>][i])  </span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">not</span> que.empty():  </span><br><span class="line">        v = que.get()  </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">27</span>):  </span><br><span class="line">            <span class="keyword">if</span> tree[v][i]:  </span><br><span class="line">                fail[tree[v][i]] = tree[fail[v]][i]  </span><br><span class="line">                que.put(tree[v][i])  </span><br><span class="line">            <span class="keyword">else</span>:  </span><br><span class="line">                tree[v][i] = tree[fail[v]][i]</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">query</span>(<span class="params">str_input</span>):  </span><br><span class="line">    root = <span class="number">0</span>  </span><br><span class="line">    ans = <span class="number">0</span>  </span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> <span class="built_in">list</span>(str_input):  </span><br><span class="line">        index = <span class="built_in">ord</span>(ch) - <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>)  </span><br><span class="line">        u = root = tree[root][index]  </span><br><span class="line">        <span class="keyword">while</span> u <span class="keyword">and</span> end[u] != -<span class="number">1</span>:  </span><br><span class="line">            ans += end[u]  </span><br><span class="line">            end[u] = -<span class="number">1</span>  </span><br><span class="line">            u = fail[u]  </span><br><span class="line">    <span class="keyword">return</span> ans</span><br></pre></td></tr></table></figure>
+    <title>Hexo 框架基本命令</title>
+    <url>/2022/11/11/hello-world/</url>
+    <content><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">insert(<span class="string">&#x27;ash&#x27;</span>)  </span><br><span class="line">insert(<span class="string">&#x27;shx&#x27;</span>)  </span><br><span class="line">insert(<span class="string">&#x27;bcd&#x27;</span>)  </span><br><span class="line">insert(<span class="string">&#x27;sha&#x27;</span>)  </span><br><span class="line">insert(<span class="string">&#x27;h&#x27;</span>)  </span><br><span class="line">get_fail()  </span><br><span class="line"><span class="built_in">print</span>(query(<span class="string">&#x27;ashe&#x27;</span>))</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<pre><code>&gt;&gt; 2
-</code></pre>
+<h3 id="Clean-cache-files"><a href="#Clean-cache-files" class="headerlink" title="Clean cache files"></a>Clean cache files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<h3 id="Create-new-pages"><a href="#Create-new-pages" class="headerlink" title="Create new pages"></a>Create new pages</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/zh-cn/docs/">Hexo_docs</a></p>
 ]]></content>
       <categories>
-        <category>算法</category>
-        <category>匹配</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>算法</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
