@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>机器学习</title>
-    <url>/2022/11/12/page2/</url>
-    <content><![CDATA[<p>#这是一篇测试文章<br>##测试一</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Windows系统下安装Debian 12虚拟机</title>
     <url>/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
     <content><![CDATA[<h2 id="工具-amp-环境"><a href="#工具-amp-环境" class="headerlink" title="工具&amp;环境"></a>工具&amp;环境</h2><ul>
@@ -33,6 +27,12 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>机器学习</title>
+    <url>/2022/11/12/page2/</url>
+    <content><![CDATA[<p>#这是一篇测试文章<br>##测试一</p>
 ]]></content>
   </entry>
 </search>
