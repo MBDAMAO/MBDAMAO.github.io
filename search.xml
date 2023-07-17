@@ -24,6 +24,12 @@
       </tags>
   </entry>
   <entry>
+    <title>机器学习</title>
+    <url>/2022/11/12/page2/</url>
+    <content><![CDATA[<p>#这是一篇测试文章<br>##测试一</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Windows系统下安装Debian 12虚拟机</title>
     <url>/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
     <content><![CDATA[<h2 id="0-工具-amp-环境"><a href="#0-工具-amp-环境" class="headerlink" title="0. 工具&amp;环境"></a>0. 工具&amp;环境</h2><ul>
@@ -86,11 +92,5 @@
       <tags>
         <tag>Hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>机器学习</title>
-    <url>/2022/11/12/page2/</url>
-    <content><![CDATA[<p>#这是一篇测试文章<br>##测试一</p>
-]]></content>
   </entry>
 </search>
