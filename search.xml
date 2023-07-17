@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>MBDAMAO</title>
-    <url>/2022/11/11/hello-world/</url>
-    <content><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://mbdamao.github.io/">111</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: </p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: </p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: </p>
+    <title>Windows系统下安装Debian 12虚拟机</title>
+    <url>/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
+    <content><![CDATA[<h2 id="0-工具-amp-环境"><a href="#0-工具-amp-环境" class="headerlink" title="0. 工具&amp;环境"></a>0. 工具&amp;环境</h2><ul>
+<li>Windows操作系统</li>
+<li>VMware虚拟机环境</li>
+</ul>
+<h2 id="1-在官网下载Debian-12-ISO镜像-（科学上网加速）"><a href="#1-在官网下载Debian-12-ISO镜像-（科学上网加速）" class="headerlink" title="1. 在官网下载Debian 12 ISO镜像    （科学上网加速）"></a>1. 在官网下载Debian 12 ISO镜像    （科学上网加速）</h2><pre><code>https://www.debian.org/download 
+</code></pre>
+<h2 id="2-在VMware里创建虚拟机"><a href="#2-在VMware里创建虚拟机" class="headerlink" title="2. 在VMware里创建虚拟机"></a>2. 在VMware里创建虚拟机</h2><p><img src="./1.png"></p>
+<p><img src="./2.png"></p>
+<p><img src="./3.png"></p>
+<p><img src="./4.png"></p>
+<p><img src="./5.png"></p>
+<p><img src="./6.png"></p>
+<p><img src="./7.png"></p>
+<p><img src="./8.png"></p>
+<p><img src="./9.png"></p>
+<p><img src="./10.png"></p>
+<p><img src="./11.png"></p>
+<p><img src="./12.png"></p>
+<p><img src="./13.png"></p>
+<p><img src="./14.png"></p>
+<p><img src="./15.png"></p>
+<p><img src="./16.png"></p>
+<h2 id="3-启动虚拟机配置系统"><a href="#3-启动虚拟机配置系统" class="headerlink" title="3. 启动虚拟机配置系统"></a>3. 启动虚拟机配置系统</h2><p><img src="./17.png"></p>
+<p><img src="./18.png"></p>
 ]]></content>
   </entry>
   <entry>
@@ -24,15 +36,20 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Windows系统下安装Debian 12虚拟机</title>
-    <url>/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
-    <content><![CDATA[<h2 id="0-工具-amp-环境"><a href="#0-工具-amp-环境" class="headerlink" title="0. 工具&amp;环境"></a>0. 工具&amp;环境</h2><ul>
-<li>Windows操作系统</li>
-<li>VMware虚拟机环境</li>
-</ul>
-<h2 id="1-在官网下载Debian-12-ISO镜像-（科学上网加速）"><a href="#1-在官网下载Debian-12-ISO镜像-（科学上网加速）" class="headerlink" title="1. 在官网下载Debian 12 ISO镜像    （科学上网加速）"></a>1. 在官网下载Debian 12 ISO镜像    （科学上网加速）</h2><pre><code>https://www.debian.org/download 
-</code></pre>
-<h2 id="2-在VMware里创建虚拟机"><a href="#2-在VMware里创建虚拟机" class="headerlink" title="2. 在VMware里创建虚拟机"></a>2. 在VMware里创建虚拟机</h2><p><img src="./1.png" alt="这是一个图片捏" title="图一"></p>
+    <title>Hexo 框架基本命令</title>
+    <url>/2022/11/11/hello-world/</url>
+    <content><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="Clean-cache-files"><a href="#Clean-cache-files" class="headerlink" title="Clean cache files"></a>Clean cache files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/zh-cn/docs/">Hexo_docs</a></p>
 ]]></content>
   </entry>
 </search>
