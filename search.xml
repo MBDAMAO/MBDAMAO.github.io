@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>AC自动机</title>
-    <url>/2023/07/17/AC%E8%87%AA%E5%8A%A8%E6%9C%BA/</url>
+    <url>/damaoS/site.git/2023/07/17/AC%E8%87%AA%E5%8A%A8%E6%9C%BA/</url>
     <content><![CDATA[<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">insert</span>(<span class="params">str_input</span>):  </span><br><span class="line">    <span class="keyword">global</span> cnt  </span><br><span class="line">    root = <span class="number">0</span>  </span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> str_input:  </span><br><span class="line">        index = <span class="built_in">ord</span>(ch) - <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>)  </span><br><span class="line">        <span class="keyword">if</span> tree[root][index] == <span class="number">0</span>:  </span><br><span class="line">            cnt = cnt + <span class="number">1</span>  </span><br><span class="line">            tree[root][index] = cnt  </span><br><span class="line">        <span class="comment"># sum_[tree[root][index]] += 1 前缀计数  </span></span><br><span class="line">        root = tree[root][index]  </span><br><span class="line">    end[root] += <span class="number">1</span>  <span class="comment"># 标记结束</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_fail</span>():  </span><br><span class="line">    fail[<span class="number">0</span>] = <span class="number">0</span>  </span><br><span class="line">    que = queue.Queue()  </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">27</span>):  </span><br><span class="line">        <span class="keyword">if</span> tree[<span class="number">0</span>][i]:  </span><br><span class="line">            que.put(tree[<span class="number">0</span>][i])  </span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">not</span> que.empty():  </span><br><span class="line">        v = que.get()  </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">27</span>):  </span><br><span class="line">            <span class="keyword">if</span> tree[v][i]:  </span><br><span class="line">                fail[tree[v][i]] = tree[fail[v]][i]  </span><br><span class="line">                que.put(tree[v][i])  </span><br><span class="line">            <span class="keyword">else</span>:  </span><br><span class="line">                tree[v][i] = tree[fail[v]][i]</span><br></pre></td></tr></table></figure>
@@ -25,7 +25,7 @@
   </entry>
   <entry>
     <title>Windows系统下安装Debian 12虚拟机</title>
-    <url>/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
+    <url>/damaoS/site.git/2023/07/16/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Debian%2012%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
     <content><![CDATA[<h2 id="0-工具-amp-环境"><a href="#0-工具-amp-环境" class="headerlink" title="0. 工具&amp;环境"></a>0. 工具&amp;环境</h2><ul>
 <li>Windows操作系统</li>
 <li>VMware虚拟机环境</li>
@@ -64,7 +64,7 @@
   </entry>
   <entry>
     <title>Hexo 框架基本命令</title>
-    <url>/2022/11/11/hello-world/</url>
+    <url>/damaoS/site.git/2022/11/11/hello-world/</url>
     <content><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 
@@ -89,8 +89,30 @@
   </entry>
   <entry>
     <title>机器学习</title>
-    <url>/2022/11/12/page2/</url>
+    <url>/damaoS/site.git/2022/11/12/page2/</url>
     <content><![CDATA[<p>#这是一篇测试文章<br>##测试一</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>clone失败问题解决</title>
+    <url>/damaoS/site.git/2023/07/18/clone%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<blockquote>
+<p>最近在配置虚拟机环境的时候需要用git clone命令，结果一直报错，修改dns后立即解决</p>
+</blockquote>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><hr>
+<p>打开host文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo nano ~/etc/hosts</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>添加以下内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">140.82.114.4 github.com</span><br><span class="line">199.232.69.194 github.global.ssl.fastly.net</span><br><span class="line">185.199.108.153 assets-cdn.github.com</span><br><span class="line">185.199.110.153 assets-cdn.github.com</span><br><span class="line">185.199.111.153 assets-cdn.github.com</span><br></pre></td></tr></table></figure>
+
+<p>保存退出</p>
+<hr>
+<p>再次git clone即可成功</p>
+]]></content>
+      <tags>
+        <tag>遇到的问题</tag>
+      </tags>
   </entry>
 </search>
