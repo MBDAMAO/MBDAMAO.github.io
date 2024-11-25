@@ -1,0 +1,7 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Series - 系列 - Damao Blog</title>
+        <link>https://www.damaoz.site/series/</link>
+        <description>Series - 系列 - Damao Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://www.damaoz.site/series/" rel="self" type="application/rss+xml" /></channel>
+</rss>
