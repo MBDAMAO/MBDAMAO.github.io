@@ -3,7 +3,14 @@
         <title>Tags - 标签 - Damao Blog</title>
         <link>https://www.damaoz.site/tags/</link>
         <description>Tags - 标签 - Damao Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 23 Nov 2024 12:55:12 &#43;0800</lastBuildDate><atom:link href="https://www.damaoz.site/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Nov 2024 18:43:23 &#43;0800</lastBuildDate><atom:link href="https://www.damaoz.site/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Blog</title>
+    <link>https://www.damaoz.site/tags/blog/</link>
+    <pubDate>Sun, 24 Nov 2024 18:43:23 &#43;0800</pubDate><author>
+        <name>damao</name>
+    </author><guid>https://www.damaoz.site/tags/blog/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Zsh</title>
     <link>https://www.damaoz.site/tags/zsh/</link>
     <pubDate>Sat, 23 Nov 2024 12:55:12 &#43;0800</pubDate><author>

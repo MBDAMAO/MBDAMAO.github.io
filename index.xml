@@ -3,9 +3,16 @@
         <title>Damao Blog</title>
         <link>https://www.damaoz.site/</link>
         <description>这是我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Nov 2024 18:43:23 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 28 Nov 2024 20:42:56 &#43;0800</lastBuildDate>
             <atom:link href="https://www.damaoz.site/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>为你的博客添加免费的浏览统计</title>
+    <link>https://www.damaoz.site/%E4%B8%BA%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%85%8D%E8%B4%B9%E7%9A%84%E6%B5%8F%E8%A7%88%E7%BB%9F%E8%AE%A1/</link>
+    <pubDate>Sun, 24 Nov 2024 18:43:23 &#43;0800</pubDate><author>
+        <name>damao</name>
+    </author><guid>https://www.damaoz.site/%E4%B8%BA%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%85%8D%E8%B4%B9%E7%9A%84%E6%B5%8F%E8%A7%88%E7%BB%9F%E8%AE%A1/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Windows配置zsh</title>
     <link>https://www.damaoz.site/windows%E9%85%8D%E7%BD%AEzsh/</link>
     <pubDate>Sat, 23 Nov 2024 12:55:12 &#43;0800</pubDate><author>

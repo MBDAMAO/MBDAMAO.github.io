@@ -261,3 +261,11 @@ fi
 eval "$(starship init zsh)"
 ```
 
+## 参考文章
+
+- [Windows 安装 Zsh 终端 - fetips 的文章 - 知乎](https://zhuanlan.zhihu.com/p/625583037)
+
+- [在 Zsh 环境下配置 Conda/Mamba 踩坑记录](https://hairlessvillager.github.io/2024/09/10/a-problem-in-windows-conda-zsh/)
+
+- [Starship 快速上手](https://starship.rs/zh-CN/guide/)
+
