@@ -2,8 +2,8 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.damaoz.site/options/</loc><lastmod>2024-11-28T20:43:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.damaoz.site/</loc><lastmod>2024-11-28T20:43:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://www.damaoz.site/options/</loc><lastmod>2024-11-29T13:26:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.damaoz.site/</loc><lastmod>2024-11-29T13:26:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://www.damaoz.site/en/"
@@ -78,6 +78,7 @@
                     hreflang="zh-cn"
                     href="https://www.damaoz.site/categories/"
                     /></url><url>
+            <loc>https://www.damaoz.site/offline/</loc><lastmod>2024-11-28T21:42:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.damaoz.site/series/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"

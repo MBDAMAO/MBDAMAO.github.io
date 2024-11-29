@@ -1,0 +1,27 @@
+{
+    "version" : "https://jsonfeed.org/version/1.1",
+    "title" : "Damao Blog",
+    "description": "damao's personal blog",
+    "home_page_url" : "https://www.damaoz.site/",
+    "feed_url" : "https://www.damaoz.site/en/index.feed",
+    "icon" : "https://www.damaoz.site/apple-touch-icon.png",
+    "favicon" : "https://www.damaoz.site/favicon.ico",
+    "author" : {
+        "name" : "damao",
+        "avatar": "https://www.damaoz.site/images/avatar.webp"
+    },
+    "items" : [
+    {
+        "title" : "Setup Zsh on Windows",
+        "date_published" : "2024-11-23T12:56:15+08:00",
+        "date_modified" : "2024-11-24T22:10:35+08:00",
+        "id" : "https://www.damaoz.site/en/windows%E9%85%8D%E7%BD%AEzsh/",
+        "url" : "https://www.damaoz.site/en/windows%E9%85%8D%E7%BD%AEzsh/",
+        "author" : {
+          "name" : "damao"
+        },
+        "content_html" : "",
+        "language": "en"
+    },
+    ]
+}

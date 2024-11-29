@@ -2,8 +2,9 @@
     <channel>
         <title>Damao Blog</title>
         <link>https://www.damaoz.site/</link>
-        <description>这是我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 28 Nov 2024 20:42:56 &#43;0800</lastBuildDate>
+        <description>damao的个人博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>3034906016@qq.com (damao)</managingEditor>
+            <webMaster>3034906016@qq.com (damao)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 29 Nov 2024 13:26:45 &#43;0800</lastBuildDate>
             <atom:link href="https://www.damaoz.site/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>为你的博客添加免费的浏览统计</title>
